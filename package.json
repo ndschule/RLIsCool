@@ -1,0 +1,34 @@
+{
+  "name": "rliscool",
+  "version": "1.0.0",
+  "description": "RL fan site",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndschule/RLIsCool.git"
+  },
+  "keywords": [
+    "fan",
+    "site",
+    "rl",
+    "cool",
+    "psyonix"
+  ],
+  "author": "Nate Schuler",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ndschule/RLIsCool/issues"
+  },
+  "homepage": "https://github.com/ndschule/RLIsCool#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "nodemon": "^2.0.7"
+  }
+}
