@@ -11,15 +11,24 @@ const app = express();
 app.set('view engine','ejs');
 app.set('views',viewsPath);
 
+var x = 0;
+
+const counter = function(req, res, next) {
+    x++;
+    console.log(x);
+    next();
+}
+
+app.use(express.static(staticPath));
+
 app.get('/', function(req, res) {
     res.render('index');
 });
 
-app.get('/famous', function(req, res) {
-    res.render('famous');
+app.get('/famous', counter, function(req, res) {
+    res.render('famous',{count: x});
 });
 
-app.use(express.static(staticPath));
+
 
 app.listen(2000);
-
