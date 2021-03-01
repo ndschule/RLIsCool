@@ -2,9 +2,9 @@ const express = require('express');
 const ejs = require('ejs');
 const path = require('path');
 
-const clientPath = path.join(__dirname,'../client');
-const staticPath = path.join(clientPath,'/static');
-const viewsPath = path.join(clientPath,'/views');
+const clientPath = path.join(__dirname,'../client/');
+const staticPath = path.join(clientPath,'/static/');
+const viewsPath = path.join(clientPath,'/views/');
 
 const app = express();
 
